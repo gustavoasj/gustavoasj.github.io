@@ -334,7 +334,7 @@
 
         
             if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(initialize, showError);
+                navigator.geolocation.getCurrentPosition(initialize, showError,{timeout:5000});
             } else {
                 x.innerHTML = "Geolocalização não é suportada nesse browser.";
             }
